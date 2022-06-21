@@ -1,0 +1,53 @@
+
+
+.exoGuide {
+    padding: 15px;
+    background-color: #214567;
+    color:white;
+    width: 50%;
+    text-align: center;
+    transform: translateX(150);
+    transition: .5s;
+}
+
+.majeur {
+    font-size: 1.2rem;
+margin:10px;
+color:green;
+width: 100%;
+text-align: center;
+border: 1px solid green;
+}
+
+.mineur {
+    
+    font-size: 1.2rem;
+    border: 1px solid red;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color:red;
+    text-align: center;
+
+}
+
+.faux {
+    border: 1px solid red;
+    color:red;
+}
+
+input[id=psw2]:focus{
+    color:black;
+    
+    
+
+}
+
+fieldset {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+div#retourpass {
+    margin-top: 10px;
+}

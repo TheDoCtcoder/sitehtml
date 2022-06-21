@@ -1,0 +1,75 @@
+/* mise en forme general */
+table {
+    width: 100%;
+    empty-cells: hide;
+    caption-side: bottom;
+
+}
+
+td, th {
+    border : 1px solid #214567;
+    text-align: center;
+    padding: 7px;
+}
+
+th,td:hover {
+    background-color: #214467;
+    color: white;
+}
+
+/* Mise en forme de table 1 */
+
+.table1 td {
+    border : 1px solid #214567;
+    text-align: center;
+    padding: 7px;
+}
+
+/* mise en forme de table2 */
+
+.table2 th {
+    border: 1px solid black;
+    background-color: #214567;
+}
+
+.table1 th {
+    width: 25%;
+
+}
+
+
+tr:hover {
+    border-color: blue;
+}
+
+.table2 {
+ border-collapse: collapse;
+ border-spacing: 5px 15px;  /*gauche droite et deuxieme valeur */
+}
+
+/* mise en forme table3 */
+
+.table3 {
+    border-spacing: 0;
+}
+
+.table3 td {
+border: 1px solid black;
+}
+
+
+caption {
+    text-align: left;
+    color: #214467;
+    font-size: .8em;
+    font-style: italic;
+}
+
+.vacances {
+    background-color: #77aee1;
+}
+
+tr:nth-child(odd) {
+    border-color: #77aee1;
+
+}

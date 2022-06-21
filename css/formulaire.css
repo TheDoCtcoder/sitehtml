@@ -1,0 +1,46 @@
+input {
+    display:block;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(16, 220, 16);
+
+}
+
+fieldset {
+    padding: 25px 5px;
+    background-color: rgb(90, 231, 48);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+ 
+input[type="submit"] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: larger;
+    font-weight: 500;
+ 
+
+}
+
+input {
+    width: 100%;
+    line-height: 2em;
+}
+
+legend {
+    margin: 10px;
+}
+
+input:focus {
+border: none;
+border-bottom: 1px;
+;
+}

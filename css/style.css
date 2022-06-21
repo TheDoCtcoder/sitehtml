@@ -1,0 +1,175 @@
+/* Mise en forme générale */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(245, 245, 245);
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;    
+    line-height: 1.25;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+/* h1 {
+    padding: 25px;
+    background-color: aqua;
+    margin: 15px;
+} */
+
+/* Mise en place du header et de la navigation */
+
+   header {
+       background-color: rgb(138, 211, 85);
+    color: white;
+    border: rgba(163,203,77,.9);
+}
+
+header div {
+    border: 1px solid black;
+    height: 25vh;
+    background-image: url("../img/banner-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+}
+
+header nav li {
+    list-style: none;
+    margin: 12px;
+    display: inline-block;
+}
+
+header nav li a {
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 7px;
+    color: white;
+    text-decoration: none;
+}
+ 
+/* animations des hover du menu  */
+header nav li a {
+    color:white;
+    background-color: rgba(0,0,0,0);
+}
+header nav li a:hover {
+    color:rgb(186,247,54);
+    background-color: rgba(0,0,0,.5);
+    transition: .3s;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+/* mise en place du main  */
+main {
+    padding: 24px 18px;
+    max-width: 1024px;
+    background-color: rgb(235,235,235);
+    margin: 0 auto;
+}
+
+main h1 {
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    color: #214567;
+    font-size: 2.6em;
+    font-weight: 800;
+    margin-bottom: 24px;
+    border-bottom: 1px dashed #214567;   
+    padding-bottom: 24px;
+}
+
+main h2 {
+    font-size: 1,6em;
+    font-weight: 300;
+    margin-bottom: 18px;
+    color:white;
+    background-color: #214567;
+    padding: 7px;
+}
+main h3 {
+font-size: 1.6em;
+margin-bottom: 12px;
+}
+
+main article {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+
+/* mise en places des figures du main  */
+
+main figure {
+    margin-bottom: 12px;
+
+}
+
+main figcaption {
+    background-color: #383b3f;
+    color: rgb(242,242,242);
+    padding:7px;
+    text-align: center;
+    font-style: italic;
+    font-size: .9em;
+
+}
+
+footer {
+    color:white;
+    text-align: center;
+    background-color: #383b3f;
+    padding: 10px;
+    border: 1px dashed #214567;   
+
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+
+footer h2 {
+    color: #abc371a4;
+    letter-spacing: 9px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* mise en place de la galerie */
+@media screen and (min-width:780px){
+
+#gallery figure {
+    width: 47.5%;
+
+
+}
+
+.flexing {
+    display: flex;
+
+}
+
+#gallery {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+}
+
+/* font-family: 'Koulen', cursive; */

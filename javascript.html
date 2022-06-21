@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon premier javascript</title>
+    <meta
+      name="description"
+      content="Ceci est mon premier site avec javascript."/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="javascript.css">
+  </head>
+  <body id="body">
+    <header>
+      <div>
+        <!-- Image ajoutée via le CSS -->
+        
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="javascript.html">javascript</a></li>
+          <li><a href="tableaux.html">Les tableaux</a></li>
+          <li>
+            <a href="https://interface3namur.be" target="_blank"
+              >interface3namur</a
+            >
+          </li>
+          <li><a href="formulaire.html">formulaire</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+          <h2>Mes premiers scripts</h2>
+          <article>              
+            <h3>Le bouton qui dit bonjour </h3>
+            <button type="button" onclick="bonjour()"> Dites Bonjours !</button>
+          </article>
+          <article>
+            <h3>Dire bonjour depuis un formulaire</h3>
+            <form action="javascript:bonjour()">
+              <input type="submit" value="dire bonjour">
+            </form>
+          </article>
+          <article>
+            <h3>Dire Bonjour via un addeventlistener</h3>
+            <input type="button" value="Dire bonjour" id="direBonjour">
+          </article>
+          <article>
+            <h3>Réponse du javascript</h3>
+            <p id="reponseBonjour"></p>
+          </article>
+          <article>
+            <h3>Récupération des valeurs et affichage dans la page</h3>
+            <input type="text" id="userFirstName" placeholder="entrez votre prénom">
+            <input type="text" id="userName" placeholder="Entrez votre nom">
+            <input type="button" value="Envoyez" onclick="exoGuide()">
+            <p id="retourExoGuide"></p>
+          </article>
+          <article>
+            <h3>Concaténation et fonction prompt()</h3>
+            <input type="button" value="clic" onclick="concatenation()"> 
+          </article>
+          <article>
+            <h3>Majeur ou pas ?</h3>
+            <input type="text" id="age" placeholder="Entrez votre age :">
+            <input type="button" value="Envoyez" onclick="majeur()">
+            <p id="retourAge"></p>
+          </article>
+          <article>
+            <h3>Calcul du prix</h3>
+            <!-- donner la possibilité d'entrer un prix d'un article  -->
+            <!-- un nombre d'article  -->
+            <!-- afficher votre total s élève à dans la page -->
+            <input type="number" id="prix" placeholder="entrez le prix">
+            <input type="number" id="quantite" placeholder="entrez la quantité">
+            <input type="number" id="tva" placeholder="entrez le taux de tva">
+            <input type="button" value="Calculer le total" onclick="cprix()">
+            <p id="rprix"></p>
+            
+          </article>
+
+          <article>
+            <h3>Calcul du Volume d'une sphère</h3>
+            <input type="text" id="rayon" placeholder="entrez le rayon : ">
+            <input type="button" value="Calculer le volume de la sphère" onclick="vsphere()">
+            <p id="rsphere"></p>
+          </article>
+          <article>
+            <h3>possibilité de formation</h3>
+            <!-- demander l'année de naissance de l'utilisateur
+            calculer son retourAgesi age est entre 18 et 35 ans, lui dire qu'il peut se formulaire
+            et lui donner le lien vers if3n -->
+            <!-- sinon, lui dire qu'il ne rentre pas dans les conditions -->
+            <input type="text" id="naissanceUser"  placeholder="entrez votre année de naissance : ">
+            <input type="button" value="Vérifier les conditions !!!" onclick="condition1()">
+            <p id="rcondition"></p>
+            
+          </article>
+          <article>
+            <h3>Bissextile ou pas ?</h3>
+            <!-- l'utilisateur entre une année
+            vous lui dites si elle est bissectile ou pas -->
+            <input type="text" id="anneB"  placeholder="entrez l'année  : ">
+            <input type="button" value="Vérifier Bissectile !!!" onclick="bissec()">
+            <p id="rbissec"></p>
+            
+          </article>
+          <article>
+            <h3>Concordance de mot de passe</h3>
+            <!-- demander a user de choisir un mot de passe -->
+            <!-- demander de repeter le mot de passe -->
+            <!-- verifier si les deux sont les memes -->
+            <!-- si pas lui signaler indiquer graphiquement qu'il y a une erreur -->
+            <input type="password" id="psw"  placeholder="entrez votre mot de passe  : ">
+            <input type="password" id="psw2"  placeholder="répétez votre mot de passe  : ">
+            <input type="button" value="Vérifier votre mot de passe!!!" onclick="passe()">
+            <p id="rpasse"></p>
+            
+
+          </article>
+          <article>
+            <h3>La condition SWITCH</h3>
+            <input type="text" id="condSwitch" placeholder="Nombe entre 1 et 4">
+            <input type="button" value="SWITCH" onclick="condSwitch()">
+          </article>
+          <article>
+            <h3>Droit ou pas ?</h3>
+            <!-- demander a user si homme, femme ou non binaire -->
+            <!-- demander l'age -->
+            <!-- les femmes et non binaire ont l'entrée gratuite -->
+            <!-- gratuit pour les moins de 25 ans, et les plus de 55 ans (homme ou femme)  -->
+            <!-- interdit pour les moins de 18 ans  -->
+
+            <!-- <div>
+              <input type="radio" id="huey" name="drone" value="huey"
+                    // checked>
+              <label for="huey">Huey</label>
+            </div> -->
+            <fieldset>
+            <div>
+              <h3>Entrez le sexe</h3>
+            <input type="radio" value="Homme" name="sexe" id="sexe" >
+            <label for="Homme">Homme</label>
+          </div>
+          <div>
+            
+            <input type="radio" value="Femme" name="sexe" id="sexe2" >
+            <label for="Femme">Femme</label>
+          </div>
+          <div>
+            
+            <input type="radio" value="Non Binaire" name="sexe" id="sexe3">
+            <label for="Non Binaire">Non Binaire</label>
+          </div>
+          <h3>Entrez l'âge</h3>
+          <input type="text" id="agesexe" placeholder="Entrez votre âge : ">
+          <input type="button" value="Validez" onclick="entrez()">
+          <br>
+        </fieldset>
+        <p id="entree"></p>
+
+
+          </article>
+          <article>
+            <h3>Première boucle : while</h3>
+            <input type="button" value="Lancer le script" onclick="boucleWhile()">
+          </article>  
+          <article>
+            <h3>Boucle while avec compteur</h3>
+            <input type="button" value="Lancer le script" onclick="whileCompteur()">
+          </article>
+          <article>
+            <h3>Boucle Do...While</h3>
+            <input type="button" value="Lancer le script" onclick="boucleDoWhile()">
+          </article>
+          <article>
+            <h3>La boucle for</h3>
+            <input type="button" value="Lancer le script" onclick="boucleFor()">
+          </article>
+          <article>
+            <h3>Concaténation dans une boucle</h3>
+            <input type="button" value="Lancer le script" onclick="concaBoucle()")> 
+          </article>
+          <article>
+            <h3>Les 15 suivants</h3>
+            <!-- un champ input où l'utilisateur entre un nombre -->
+            <!-- afficher dans la page les 15 nombres suivants  -->
+            <input type="text" placeholder="entrez un nombre" id="enombre">
+            <input type="button" value="Lancer le script" onclick="suivant15()">
+            <p id="ppretour"></p>
+          </article>
+          <article>
+            <h3>on entre un numéro et on demande à l'utilisateur combien il en veut après</h3>
+            <input type="text" placeholder="entrez un nombre" id="enombre1">
+            <input type="text" placeholder="Combien en voulez-vous après ?" id="enombre2">
+            <input type="button" value="Lancer le script" onclick="suivant()">
+            <p id="pppretour"></p>
+
+          </article>
+          <article>
+            <h3>Table de multiplication</h3>
+            <!-- demander un nombre à l'utilisateur  -->
+            <!-- afficher dans la page  -->
+            <!-- exemple pour 5 -->
+            <!-- 5x 1 = 5  -->
+            <!-- 5 x 2 = 10 -->
+            <input type="text" placeholder="entrez un nombre" id="enombre3">
+            <input type="button" value="Lancer le script" onclick="table2()">
+            <p id="ttretour"></p>
+          </article>
+          <article>
+            <h3>Trouver les diviseurs d'un nombre</h3>
+            <!-- demander un nombre
+            lui afficher tous les diviseurs de ce nombre -->
+            <input type="text" placeholder="entrez un nombre" id="nombred">
+            <input type="button" value="Lancer le script" onclick="divisiblen()">
+            <p id="tttretour"></p>
+
+          </article>
+          <article>
+            <h3>Les ranges</h3>
+            <div>
+              <input type="range" id="crouge" name="crouge" 
+              min="0" max="255" value="125" step="1" oninput="couleurfond()">
+              <label for="crouge">rouge</label>
+              
+            </div> 
+            <div>
+              <input type="range" id="cvert" name="cvert" 
+                     min="0" max="255" value="125" step="1" oninput="couleurfond()">
+              <label for="cvert">vert</label>
+            </div>
+            <div>
+              <input type="range" id="cbleu" name="cbleu" 
+                     min="0" max="255" value="125" step="1" oninput="couleurfond()">
+              <label for="cbleu">bleu</label>
+            </div>
+          </article>
+          <article>
+            <h3>vérification de mot de passe</h3>
+            <p>entrez votre mot de passe</p>
+            <input type="text" id="ipass">
+            <div id="retourpass">
+              <p>pas assez long</p>
+              <p>pas de majuscule</p>
+              <p>pas de chiffre</p>
+              <p>pas de caractère spécial</p>
+            
+            
+          </div>
+          </article>
+          <article>
+            <h3>Test de mot de passe</h3>
+            <input type="password" id="mdpUser" oninput="testMdp()">
+            <div id="repTestMdp"></div>
+          </article>
+        
+      </section>
+    </main>
+
+    <footer>
+      <h2>Informations</h2>
+      <p>Site web réalisé dans le cadre de la formation</p>
+      <p><strong>Dev Fullstack JS</strong></p>
+      <p><strong>Toni Deplano</strong> &copy;2022</p>
+    </footer>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

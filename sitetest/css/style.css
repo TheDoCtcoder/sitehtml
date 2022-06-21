@@ -1,0 +1,146 @@
+/* Mise en forme générale */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(46, 171, 160, 0.466);
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;    
+    line-height: 1.25;
+}
+
+header div {
+    background-image: url("../../img/banner-01.jpg");
+    border: 1px solid black;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+}
+
+header nav li {
+    list-style: none;
+    margin: 12px;
+    display: inline-block;
+}
+
+header nav li a {
+    font-family: 'Koulen', cursive;
+    padding: 7px;
+    text-decoration: none; 
+    color: brown;
+}
+
+header nav ul {
+    background-color: rgb(215, 232, 205);
+    text-align: center;
+}
+
+main {
+    padding: 24px 18px;
+    max-width: 1024px;
+    background-color: rgb(235,235,235);
+    margin: 0 auto;
+}
+
+main h1 {
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    color: #214567;
+    font-size: 2.6em;
+    font-weight: 800;
+    margin-bottom: 24px;
+    border-top: 1px dashed #214567;  
+    border-bottom: 1px dashed #214567;   
+    padding-bottom: 21x; 
+}
+main section h2 {
+    background-color: rgb(215, 232, 205);
+    font-size: 1,6em;
+    font-weight: 300;
+    margin-bottom: 18px;
+    padding: 7px;
+    border-top: 1px dashed #214567;  
+    border-bottom: 1px dashed #214567; 
+
+}
+
+p {
+    text-align:right;
+    margin-bottom: 1em;
+}
+
+ main section article p::first-letter {
+    font-size: 2.0em;
+}
+
+main section article p {
+    color:rgb(0, 56, 224);
+    background-color: #fff;
+}
+
+main figure {
+    margin-bottom: 12px;
+
+}
+
+main figcaption {
+    background-color: #383b3f;
+    color: rgb(242,242,242);
+    padding:7px;
+    text-align: center;
+    font-style: italic;
+    font-size: .9em;
+
+}
+
+main article {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+
+}
+/* mise en place de la galerie */
+@media screen and (min-width:780px){
+
+    #gallery figure {
+        width: 47.5%; 
+    }
+    
+    .flexing {
+        display: flex; 
+    }
+    
+    #gallery {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    footer {
+        background-color: rgba(221, 130, 130, 0.514);
+        text-align: center;
+        
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    img:hover {
+        width: 120%;
+        height: 120%;
+        overflow: hidden;
+    }
+
+    main {
+        margin-bottom: 100px;
+    }
